@@ -1,0 +1,77 @@
+body {
+  background-color: rgba(3, 5, 26, 0.767);
+  justify-content: center;
+  align-items: center;
+  text-decoration-color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.lista {
+  list-style-type: none;
+}
+
+a {
+  background-color: gray;
+  text-decoration: none;
+  color: white;
+  width: 20px;
+  height: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 8px 18px;
+  background: #2f3542;
+  color: white;
+  border-radius: 20px;
+  font-size: 15px;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  background: #3b4250;
+}
+
+header .navbar {
+  background-color: rgb(7, 45, 71);
+  justify-content: justify;
+  justify-items: center;
+  border-radius: 10px 10px 10px 10px;
+  margin-top: 10px;
+}
+
+.lista {
+  display: flex;
+  padding: 10px;
+  gap: 30px;
+}
+
+.subtitulo {
+  color: orange;
+}
+
+.Introduccion {
+  background-color: rgb(7, 45, 71);
+  padding: 40px;
+  width: 900px;
+  height: 200px;
+  border: 1px solid gray;
+  border-radius: 10px 10px 10px 10px;
+}
+
+main {
+  justify-content: center;
+  align-items: center;
+  display:grid;
+  place-items: center;
+}
+footer {
+  position: absolute;
+  justify-items: center;
+  bottom: 0;
+  width: 100%;
+  height: 40px; /* Define una altura fija para el footer */
+  background-color: rgb(7, 45, 71);
+}
