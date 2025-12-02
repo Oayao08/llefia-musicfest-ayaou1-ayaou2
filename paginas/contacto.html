@@ -1,23 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Llefià Music Fest</title>
-    <link rel="stylesheet" href="../style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
     <header>
+      <nav class="navbar">
         <h1>Llefià Music Fest</h1>
         <h2>Solicita información o entradas</h2>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="paginas/cartel.html">Cartel</a></li>
-                <li><a href="paginas/horario.html">Horario</a></li>
-                <li><a href="paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <ul class="lista">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="cartel.html">Cartel</a></li>
+          <li><a href="horario.html">Horario</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
-</body>
+
+    <main>
+      <section>
+        <h3 class="subtitulo">Entradas y contacto</h3>
+        <p>
+          Completa este formulario de ejemplo. En el examen se te pedirá algo
+          muy similar en otra página.
+        </p>
+      </section>
+
+      <section>
+        <form action="#" method="post">
+          <label for="nombre">Nombre completo:</label><br />
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Escribe tu nombre"
+            required
+          />
+          <br /><br />
+
+          <label for="correo">Correo electrónico:</label><br />
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="tucorreo@ejemplo.com"
+            required
+          />
+          <br /><br />
+          <label for="entrada">Tipo de entrada:</label><br />
+          <select id="entrada" name="entrada" required>
+            <option value="1dia">Pase 1 día</option>
+            <option value="3dias">Pase 3 días</option>
+            <option value="vip">Entrada VIP</option>
+          </select>
+
+          <p>¿Quieres recibir el boletín del festival?</p>
+          <label>
+            <input type="radio" name="boletin" value="si" required />
+            Sí, quiero novedades y playlists
+          </label>
+          <label>
+            <input type="radio" name="boletin" value="no" />
+            No, prefiero no recibir correos
+          </label>
+
+          <label for="mensaje">Mensaje:</label><br />
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            placeholder="Dudas sobre horarios, accesos, grupos…"
+            rows="4"
+          ></textarea>
+
+          <label>
+            <input type="checkbox" name="privacidad" required />
+            Acepto la política de privacidad.
+          </label>
+
+          <button class="button" type="submit">Enviar solicitud</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; © 2025 - Llefià Music Fest</p>
+    </footer>
+  </body>
 </html>
